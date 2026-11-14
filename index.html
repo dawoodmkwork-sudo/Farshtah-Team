@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Farshtah: an R6 animator for Roblox</title>
-<meta name="description" content="Farshtah is a free, open-source R6 animator for Roblox. Keyframe, test your animation with Roblox controls, and send it into Roblox Studio with one paste.">
-<meta property="og:title" content="Farshtah: an R6 animator for Roblox">
-<meta property="og:description" content="Keyframe R6, test it like you're in game, and send it to Roblox Studio. Free and open source.">
+<title>Farshtah: R6 animation and VFX for Roblox</title>
+<meta name="description" content="Farshtah is a free, open-source R6 animator and VFX maker for Roblox. Keyframe and test animations with Roblox controls, build effects on your swings, and send both into Roblox Studio with one paste.">
+<meta property="og:title" content="Farshtah: R6 animation and VFX for Roblox">
+<meta property="og:description" content="Animate R6, build VFX, test it like you're in game, and send it to Roblox Studio. Free and open source.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dawoodmkwork-sudo.github.io/Farshtah-Team/">
 <meta property="og:image" content="https://dawoodmkwork-sudo.github.io/Farshtah-Team/assets/hero.jpg">
@@ -131,7 +131,7 @@ summary { cursor: pointer; list-style: none; padding: 16px 0; font: 600 16px/1.3
 summary::-webkit-details-marker { display: none; }
 summary::after { content: "+"; color: var(--violet-2); font-size: 20px; line-height: 1; transition: transform .2s; }
 details[open] summary::after { transform: rotate(45deg); }
-details p { margin: 0 0 16px; color: var(--ink-2); font-size: 15px; }
+details p { margin: 0 0 16px; color: var(--ink-2); font-size: 15px; overflow-wrap: anywhere; }
 
 /* final call + footer */
 .final { margin-top: 96px; text-align: center; padding: 56px 24px; border-radius: 26px; border: 1px solid rgba(183, 164, 255, .3);
@@ -166,27 +166,28 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 10px 24px; justify-content: 
     <a class="brand" href="#top" aria-label="Farshtah home"><img src="assets/logo.svg" alt=""><span>farshtah</span></a>
     <nav aria-label="Sections">
       <a href="#features">Features</a>
+      <a href="#visuals">Visuals+</a>
       <a href="#test">Test mode</a>
       <a href="#studio">Into Studio</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="btn primary" href="Farshtah-1.0-Setup.zip" download>Download</a>
+    <a class="btn primary" href="Farshtah-1.1-Setup.zip" download>Download</a>
   </div>
 </header>
 
 <main id="top">
   <section class="hero wrap">
-    <span class="pill"><b>v1.0</b> Free · open source · Windows</span>
-    <h1>The <span class="grad">R6 animator</span> for Roblox.</h1>
-    <p class="lede">Keyframe any R6 rig, walk it around with real Roblox controls to feel the timing, then drop it into Roblox Studio with one paste.</p>
+    <span class="pill"><b>v1.1</b> New: Visuals+ · free · open source · Windows</span>
+    <h1>Animate R6.<br><span class="grad">Build VFX.</span></h1>
+    <p class="lede">Keyframe any R6 rig and walk it around with real Roblox controls. Build particles, rings and beams right on your swings. Then drop both into Roblox Studio with one paste.</p>
     <div class="cta">
-      <a class="btn primary big" href="Farshtah-1.0-Setup.zip" download>
+      <a class="btn primary big" href="Farshtah-1.1-Setup.zip" download>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
         Download for Windows
       </a>
       <a class="btn big" href="#features">See what it does</a>
     </div>
-    <p class="meta">Version 1.0 · 34 MB zip · Windows 10 or 11 · nothing else to install</p>
+    <p class="meta">Version 1.1 · 34 MB zip · Windows 10 or 11 · nothing else to install</p>
     <figure class="shot hero-shot"><img src="assets/hero.jpg" width="1600" height="900" alt="Farshtah's editor: an R6 rig mid-slash with a greatsword over a synthwave background, the timeline full of keyframes below."></figure>
   </section>
 
@@ -213,6 +214,45 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 10px 24px; justify-content: 
         <h3>Themes and clips</h3><p>Fourteen themes (six animated), custom image, GIF or video backgrounds with effects, and a built-in MP4 clip recorder.</p></div>
       <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 7h10M4 12h16M4 17h7"/><path d="M17 15l3 3-3 3"/></svg></div>
         <h3>Straight into Studio</h3><p>One click copies a prompt for Claude, or a script for the Command Bar. It checks itself before it builds anything.</p></div>
+    </div>
+  </section>
+
+  <section id="visuals" class="wrap">
+    <div class="center">
+      <span class="kicker">New · Farshtah Visuals+</span>
+      <h2>Build VFX right on your swings</h2>
+      <p class="sub">Particles, rings and beams on one timeline, played on your own animations, then into your game with one paste.</p>
+    </div>
+    <figure class="shot"><img src="assets/vfx.jpg" width="1600" height="900" loading="lazy" alt="Farshtah Visuals+: a lightning strike on the R6 rig, its layers on a timeline below and the library of samples on the left."></figure>
+    <div class="grid" style="margin-top:34px">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 7h10M4 17h6M18 7h2M14 17h6"/><circle cx="16" cy="7" r="2"/><circle cx="12" cy="17" r="2"/></svg></div>
+        <h3>Simple or advanced</h3><p>A few sliders to start. Flip to Advanced for every Roblox property: shapes, flipbooks, squash, drag and more.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h6M7 14h10"/></svg></div>
+        <h3>One timeline</h3><p>Every layer's timing in one place. Drag to move it, scrub, slow it to a tenth, or step frame by frame.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="12" cy="12" r="4"/></svg></div>
+        <h3>20 ready textures</h3><p>Glows, sparks, rings, slashes, smoke, fire and lightning flipbooks. Import a PNG, or a GIF that becomes a flipbook.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="6" r="3"/><path d="M8 11h8v6H8zM9 17v4M15 17v4"/></svg></div>
+        <h3>On your animations</h3><p>Pick a Motion animation and a marker like Impact, and the effect fires right there, in the hand, at the feet or in front.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></div>
+        <h3>Real glow</h3><p>Neon and bright particles bloom like in Roblox. Switch between Studio's lighting and your game's.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12h4l3-6 4 12 3-6h4"/></svg></div>
+        <h3>Impact feel</h3><p>Camera shake, FOV punch, screen flash and hit-stop, timed with the rest.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 18h16M7 18V9M12 18V5M17 18v-7"/></svg></div>
+        <h3>Performance meter</h3><p>See how many particles are live and how much they cover, so it runs on phones.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 7h10M4 12h16M4 17h7"/><path d="M17 15l3 3-3 3"/></svg></div>
+        <h3>Straight into your game</h3><p>Claude uploads the textures and builds the effect, with a small player that plays it from one line of code.</p></div>
+    </div>
+    <div class="row">
+      <div class="media"><img src="assets/hub.jpg" width="1600" height="900" loading="lazy" alt="Farshtah's start screen: the Motion and Visuals+ cards over the Synthwave theme."></div>
+      <div>
+        <span class="kicker">One app, two tools</span>
+        <h3>Open it and pick what to make</h3>
+        <p>Farshtah opens on a start screen with Motion and Visuals+, greets you by name, and keeps your work in each. Both share your themes and settings.</p>
+        <ul class="ticks">
+          <li><span>Starts with 10 sample effects: impact, slash, ground slam, aura, lightning, heal, explosion, dash, charge and an energy beam</span></li>
+          <li><span>Click the farshtah logo in either tool to come back here</span></li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -298,6 +338,8 @@ It's "KatanaCutSample", made in Farshtah (an R6 animator). Use the Roblox Studio
       <details><summary>Is it really free?</summary><p>Yes. Farshtah is open source under the MIT license, and the full source code is in the download's <b>source</b> folder.</p></details>
       <details><summary>Why does Windows warn me about the installer?</summary><p>The installer isn't code-signed (that costs money every year), so Windows doesn't know who made it. It only copies files into your user folder and makes shortcuts. You can read every line in the zip.</p></details>
       <details><summary>What do I need?</summary><p>Windows 10 or 11. Farshtah brings its own copy of Node.js and shows itself in Microsoft Edge, which comes with Windows. The first launch needs internet to load the 3D view; after that it's usually cached.</p></details>
+      <details><summary>What's Farshtah Visuals+?</summary><p>The VFX side of Farshtah: particle effects, rings, spheres and beams with camera shake and flashes, built on a timeline and previewed on your R6 animations. It comes in the same download.</p></details>
+      <details><summary>How do my effects play in my game?</summary><p>Export to Studio copies a prompt for your Claude. It uploads the textures, builds the effect as a Model and adds FarshtahVFX, a small module. Then one line in a LocalScript plays it: <b>require(game.ReplicatedStorage.FarshtahVFX).play(effect, cframe)</b>.</p></details>
       <details><summary>Does it do R15?</summary><p>No, Farshtah is made for R6 rigs.</p></details>
       <details><summary>Mac or Linux?</summary><p>Not yet: the installer is Windows-only.</p></details>
       <details><summary>Where are my animations?</summary><p>In <b>Documents\Farshtah</b>, as plain files: animations, references, backgrounds, models, settings and recorded clips. Updating or uninstalling never deletes them.</p></details>
@@ -308,11 +350,11 @@ It's "KatanaCutSample", made in Farshtah (an R6 animator). Use the Roblox Studio
   <div class="wrap">
     <div class="final">
       <img src="assets/logo.svg" alt="">
-      <h2>Ready to animate?</h2>
+      <h2>Ready to create?</h2>
       <p class="sub" style="margin-inline:auto">Free, open source, and ready in a minute.</p>
-      <a class="btn primary big" href="Farshtah-1.0-Setup.zip" download>
+      <a class="btn primary big" href="Farshtah-1.1-Setup.zip" download>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
-        Download Farshtah 1.0
+        Download Farshtah 1.1
       </a>
     </div>
   </div>
@@ -320,7 +362,7 @@ It's "KatanaCutSample", made in Farshtah (an R6 animator). Use the Roblox Studio
 
 <footer>
   <div class="wrap">
-    <span>Farshtah 1.0 · MIT licensed · source included in the download</span>
+    <span>Farshtah 1.1 · MIT licensed · source included in the download</span>
     <span>Not affiliated with Roblox Corporation.</span>
   </div>
 </footer>
@@ -335,7 +377,7 @@ function releaseUrl(host, pathname, zip) {
   return "https://github.com/" + m[1] + "/" + repo + "/releases/latest/download/" + zip;
 }
 (function () {
-  var zip = "Farshtah-1.0-Setup.zip", rel = releaseUrl(location.hostname, location.pathname, zip);
+  var zip = "Farshtah-1.1-Setup.zip", rel = releaseUrl(location.hostname, location.pathname, zip);
   if (!rel || !window.fetch) return;
   fetch(zip, { method: "HEAD", cache: "no-store" }).then(function (r) {
     if (r.ok) return;
